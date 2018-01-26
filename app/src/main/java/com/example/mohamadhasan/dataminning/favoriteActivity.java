@@ -399,6 +399,7 @@ public class favoriteActivity extends AppCompatActivity {
             super.onPostExecute(aVoid);
 
                 Intent intent = new Intent(favoriteActivity.this, MainActivity.class);
+                intent.putExtra("UserRating", userRating);
                 startActivity(intent);
 
         }
