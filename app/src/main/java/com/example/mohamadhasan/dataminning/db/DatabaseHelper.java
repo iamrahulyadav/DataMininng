@@ -33,7 +33,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String add = "INSERT INTO tbl_user (name,pass,Action,Adventure,Animation,Children,Comedy,Fantasy,IMAX,Romance,Sci_Fi,Western,Mystery,Crime,Drama,Horror,Thriller,Film_Noir,Ducumentary,War,Musical) VALUES('" + name + "' , '" + pass + "' , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+" , "+0+")";
 
-
 //        sql = "INSERT INTO tbl_user (name,pass,Action,Adventure,Animation,Children,Comedy,Fantasy,IMAX,Romance,Sci-Fi,Western,Mystery,Crime,Drama,Horror,Thriller,Film-Noir,Ducumentary,War,Musical) VALUES('"
 //                + name + "','" + pass + "','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0')";
         DataDB.execSQL(add);
