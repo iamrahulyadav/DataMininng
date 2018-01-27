@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
             double sumSoorat = 0;
             double sumMakhraj = 0;
-            double result = 0, tmpResult = 0;
+            double result = 0;
 
             for (int i = 0; i < 19; i++) {
                 sumMakhraj += userRating[i];
@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 for (int j = 0; j < movieList.size(); j++) {
+                    sumSoorat = 0;
                     for (int i = 0; i < 19; i++) {
 
                         sumSoorat += (Math.pow((userRating[i] - movieList.get(j).movieRating[i]), 2)) * userRating[i];
@@ -80,11 +81,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else{
 
-                        List<MovieModel> tmpList = new ArrayList<>();
                         for (int k = 0; k < favoriteMovieList.size(); k++){
 
                             if (favoriteMovieList.get(k).overAllRating <= movieList.get(j).overAllRating){
-                                //tmpList = favoriteMovieList.subList(k, favoriteMovieList.size() - 1);
                                 favoriteMovieList.add(k, movieList.get(j));
                                 break;
                             }
