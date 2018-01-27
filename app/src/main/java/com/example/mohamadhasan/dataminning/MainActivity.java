@@ -5,7 +5,10 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
+import com.example.mohamadhasan.dataminning.Adapter.MovieListAdapter;
 import com.example.mohamadhasan.dataminning.db.DatabaseHelper;
 
 import java.util.ArrayList;
@@ -16,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private double[] userRating = new double[19];
     private List<MovieModel> movieList;
     private List<MovieModel> favoriteMovieList;
+    RecyclerView recycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         userRating = getIntent().getDoubleArrayExtra("UserRating");
 
+        recycler = findViewById(R.id.recycler);
 
         dbCallBack dbCallBack = new dbCallBack();
         dbCallBack.execute();
@@ -98,8 +103,22 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
+            if (favoriteMovieList.size() > 0)
+                setUpRecyclerView(favoriteMovieList);
+
 
         }
+    }
+
+
+    private void setUpRecyclerView(List<MovieModel> List) {
+
+        MovieListAdapter adapter = new MovieListAdapter(this, List);
+        recycler.setAdapter(adapter);
+
+        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
+        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
+        recycler.setLayoutManager(mLinearLayoutManagerVertical);
     }
 
 
