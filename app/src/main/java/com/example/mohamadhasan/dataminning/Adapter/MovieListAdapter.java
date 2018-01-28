@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import java.util.Random;
 
 import com.example.mohamadhasan.dataminning.MovieModel;
 import com.example.mohamadhasan.dataminning.R;
@@ -68,6 +69,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.myVi
         private TextView txtGeners;
         private ImageView imgTitle;
 
+
         int position;
         public MovieModel current;
 
@@ -86,7 +88,25 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.myVi
 
             this.txtName.setText(current.title);
             this.txtRating.setText(current.overAllRating + "");
-            //this.imgNews.setImageResource();
+
+            switch (current.img){
+                case 1:
+                    this.imgTitle.setImageResource(R.drawable.img1);
+                    break;
+                case 2:
+                    this.imgTitle.setImageResource(R.drawable.img2);
+                    break;
+                case 3:
+                    this.imgTitle.setImageResource(R.drawable.img3);
+                    break;
+                case 4:
+                    this.imgTitle.setImageResource(R.drawable.img4);
+                    break;
+                case 5:
+                    this.imgTitle.setImageResource(R.drawable.img5);
+                    break;
+
+            }
 
             this.txtGeners.setText("ژانر: ");
 

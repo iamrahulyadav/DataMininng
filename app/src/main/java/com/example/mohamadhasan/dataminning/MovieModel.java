@@ -10,5 +10,6 @@ public class MovieModel {
     public String title;
     public double[] movieRating;
     public double overAllRating;
+    public int img;
 
 }

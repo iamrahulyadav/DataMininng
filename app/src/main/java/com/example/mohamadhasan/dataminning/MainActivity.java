@@ -13,6 +13,7 @@ import com.example.mohamadhasan.dataminning.db.DatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             double sumMakhraj = 0;
             double result = 0;
             boolean flagSort;
+            Random ran = new Random();
 
             for (int i = 0; i < 19; i++) {
                 sumMakhraj += userRating[i];
@@ -76,6 +78,29 @@ public class MainActivity extends AppCompatActivity {
 
                     result = Math.sqrt(sumSoorat / sumMakhraj);
                     movieList.get(j).overAllRating = result;
+                    int x = ran.nextInt(6);
+
+                    switch (x){
+                        case 1:
+                            movieList.get(j).img = 1;
+                            break;
+                        case 2:
+                            movieList.get(j).img = 2;
+                            break;
+                        case 3:
+                            movieList.get(j).img = 3;
+                            break;
+                        case 4:
+                            movieList.get(j).img = 4;
+                            break;
+                        case 5:
+                            movieList.get(j).img = 5;
+                            break;
+                            default:
+                                movieList.get(j).img = 1;
+                                break;
+
+                    }
 
                     favoriteMovieList.add(movieList.get(j));
 
