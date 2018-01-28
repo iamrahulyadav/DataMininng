@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.myVi
         final MovieModel currentObj = movieList.get(position);
         holder.setData(currentObj, position);
 
+        Log.i("LOG", position + "");
         //holder.rating.setRating(Float.parseFloat("2.0"));
     }
 

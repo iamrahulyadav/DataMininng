@@ -321,8 +321,14 @@ public class favoriteActivity extends AppCompatActivity {
         btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dbCallBack dbCallBack = new dbCallBack();
-                dbCallBack.execute();
+//                dbCallBack dbCallBack = new dbCallBack();
+//                dbCallBack.execute();
+
+
+                Intent intent = new Intent(favoriteActivity.this, MainActivity.class);
+                intent.putExtra("UserRating", userRating);
+                startActivity(intent);
+
             }
         });
 

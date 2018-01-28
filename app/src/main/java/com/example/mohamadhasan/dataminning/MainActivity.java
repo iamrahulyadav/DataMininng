@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             double sumSoorat = 0;
             double sumMakhraj = 0;
             double result = 0;
+            boolean flagSort;
 
             for (int i = 0; i < 19; i++) {
                 sumMakhraj += userRating[i];
@@ -76,23 +77,28 @@ public class MainActivity extends AppCompatActivity {
                     result = Math.sqrt(sumSoorat / sumMakhraj);
                     movieList.get(j).overAllRating = result;
 
-                    if (j == 0) {
-                        favoriteMovieList.add(movieList.get(j));
-                    }
-                    else{
+                    favoriteMovieList.add(movieList.get(j));
 
-                        for (int k = 0; k < favoriteMovieList.size(); k++){
 
-                            if (favoriteMovieList.get(k).overAllRating <= movieList.get(j).overAllRating){
-                                favoriteMovieList.add(k, movieList.get(j));
-                                break;
-                            }
+                }
 
-                        }
+                int l;
+                for (int k = 0; k < favoriteMovieList.size() - 1; k++){
+
+                    l = k;
+
+                    while (l > -1 && favoriteMovieList.get(l).overAllRating > favoriteMovieList.get(l + 1).overAllRating){
+
+                        favoriteMovieList.add(l, favoriteMovieList.get(l + 1));
+                        favoriteMovieList.remove(l + 2);
+
+                        l--;
 
                     }
 
                 }
+
+
             }
 
             return null;
