@@ -20,8 +20,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:orientation="vertical"
-                android:gravity="right"
-                android:padding="15dp">
+                android:gravity="right|center_vertical"
+                android:padding="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                         android:text="نام فیلم"
                         android:textStyle="bold"
                         android:singleLine="false"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:gravity="right"/>
 
                 </LinearLayout>
@@ -47,22 +47,22 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="ژانر:"
-                    android:textSize="12sp"/>
+                    android:textSize="14sp"/>
 
                 <TextView
                     android:id="@+id/txtRating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10.852"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_marginTop="10dp"/>
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/imgTitle"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
                 android:src="@drawable/movie"
                 android:scaleType="fitXY"/>
 

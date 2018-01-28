@@ -28,9 +28,10 @@
                     android:layout_centerInParent="true"
                     android:text="مووی رک"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textSize="16sp"
                     android:layout_marginRight="5dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:padding="2dp"/>
 
 
                     <ImageView
@@ -51,7 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_margin="15dp"
-        android:text="میزان علاقه خود را نسبت به هر یک از ژانرهای زیر اعلام کنید" />
+        android:text="لطفا میزان علاقه خود را نسبت به هر یک از ژانرهای زیر اعلام کنید:"
+        android:textSize="14sp"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -84,7 +86,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="اکشن" />
@@ -111,7 +114,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="ماجراجویی" />
@@ -138,7 +142,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="انیمیشن" />
@@ -165,10 +170,11 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="کودک و نو جوان" />
+                    android:text="کودک و نوجوان" />
 
             </LinearLayout>
 
@@ -192,7 +198,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="کمدی" />
@@ -219,7 +226,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="فانتزی" />
@@ -246,7 +254,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="آی مکس" />
@@ -273,7 +282,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="رومانس" />
@@ -300,7 +310,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="علمی تخیلی" />
@@ -327,7 +338,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="کابوی" />
@@ -354,7 +366,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="رازآلود" />
@@ -381,7 +394,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="جنایی" />
@@ -408,7 +422,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="درام" />
@@ -435,7 +450,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="ترسناک" />
@@ -462,7 +478,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="مهیج" />
@@ -489,7 +506,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="سیاه و سفید" />
@@ -516,7 +534,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="مستند" />
@@ -543,7 +562,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="جنگی" />
@@ -570,7 +590,8 @@
                     android:textAlignment="gravity"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="موزیکال" />
